@@ -2,4 +2,11 @@
     <string name="app_name">My Android Lab</string>
     <string name="berson">Berson</string>
     <string name="android_lab">Android Lab</string>
+    <string name="title_menu">FEATURES MENU</string>
+    <string name="sw">Star Wars - Personagens</string>
+    <string name="close">Fechar</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
