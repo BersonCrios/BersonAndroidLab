@@ -4,11 +4,13 @@ import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.Navigation
 import androidx.recyclerview.widget.RecyclerView
 import br.com.bersoncrios.myandroidlab.R
 import kotlinx.android.synthetic.main.item_people.view.*
 import kotlin.properties.Delegates
 import br.com.bersoncrios.myandroidlab.features.starwars.data.Result
+import br.com.bersoncrios.myandroidlab.features.starwars.view.fragment.PeoplesFragmentDirections
 
 class PessoaAdapter : RecyclerView.Adapter<PessoaAdapter.PessoaViewHolder>() {
 
@@ -44,14 +46,15 @@ class PessoaAdapter : RecyclerView.Adapter<PessoaAdapter.PessoaViewHolder>() {
             itemView.tv_sltura.text = people.height
             itemView.tv_peso.text = people.mass
 
-//            val actionDetail =
-//                CoffeeDrinkListFragmentDirections.showCoffeeDrinkDetail(
-//                    coffeeDrink.id
-//                )
+            var peopleId: String = people.url.substring(28).replace("/", "")
+
+            val actionDetail =
+                PeoplesFragmentDirections.showPeopleDetails(
+                    peopleId
+                )
 
             itemView.setOnClickListener {
-                    Log.e("URL", people.url);
-//                Navigation.findNavController(itemView).navigate(actionDetail)
+                Navigation.findNavController(itemView).navigate(actionDetail)
             }
         }
     }

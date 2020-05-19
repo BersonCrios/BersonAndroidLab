@@ -59,7 +59,6 @@ class PeoplesFragment : BaseFragment<StarWarsViewModel>(true) {
         })
 
         viewModel.peopleList.observe(viewLifecycleOwner, Observer { peopleList ->
-            Log.e("AAA", peopleList.results.toString())
             pessoaAdapter.updateData(peopleList!!.results)
         })
     }

@@ -51,3 +51,5 @@ Mapp/src/main/java/br/com/bersoncrios/myandroidlab/core/viewmodel/ViewState.kt,
 aapp/src/main/java/br/com/bersoncrios/myandroidlab/features/starwars/view/adapter/PessoaAdapter.kt,d\3\d310fcee8d1dc5b31071ca291862daa65732d518
 ’
 bapp/src/main/java/br/com/bersoncrios/myandroidlab/features/starwars/viewmodel/StarWarsViewModel.kt,a\7\a720a93fa75a5be2570d067f73bfd2c5f42ef5a7
+š
+japp/src/main/java/br/com/bersoncrios/myandroidlab/features/starwars/view/fragment/PeopleDetailsFragment.kt,e\c\ecba23213b71140b1bca220162072c4ff18fe45e

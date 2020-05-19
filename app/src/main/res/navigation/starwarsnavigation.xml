@@ -8,5 +8,18 @@
         android:id="@+id/peoplesFragment"
         android:name="br.com.bersoncrios.myandroidlab.features.starwars.view.fragment.PeoplesFragment"
         android:label="fragment_peoples"
-        tools:layout="@layout/fragment_peoples" />
+        tools:layout="@layout/fragment_peoples" >
+        <action
+            android:id="@+id/showPeopleDetails"
+            app:destination="@id/peopleDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/peopleDetailsFragment"
+        android:name="br.com.bersoncrios.myandroidlab.features.starwars.view.fragment.PeopleDetailsFragment"
+        android:label="layout_people_details_fragment"
+        tools:layout="@layout/layout_people_details_fragment" >
+        <argument
+            android:name="peopleId"
+            app:argType="string" />
+    </fragment>
 </navigation>
