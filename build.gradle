@@ -27,7 +27,7 @@ buildscript {
         retrofitVersion = '2.4.0'
         loggingInterceptor = '3.9.1'
         savedStateVersion = '2.3.0-alpha02'
-
+        paging_version = "2.1.2"
         //test
         junitVersion = "4.12"
         extJunitVersion = "1.1.1"

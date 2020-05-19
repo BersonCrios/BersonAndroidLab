@@ -53,3 +53,7 @@ aapp/src/main/java/br/com/bersoncrios/myandroidlab/features/starwars/view/adapte
 bapp/src/main/java/br/com/bersoncrios/myandroidlab/features/starwars/viewmodel/StarWarsViewModel.kt,a\7\a720a93fa75a5be2570d067f73bfd2c5f42ef5a7
 š
 japp/src/main/java/br/com/bersoncrios/myandroidlab/features/starwars/view/fragment/PeopleDetailsFragment.kt,e\c\ecba23213b71140b1bca220162072c4ff18fe45e
+W
+'app/src/main/res/layout/item_people.xml,a\e\aeb2b22b7ea33a535e48369958805ad6271dd12b
+\
+,app/src/main/res/layout/fragment_peoples.xml,f\6\f684b9671bbb2564fdcf267e48d53642102499fa
