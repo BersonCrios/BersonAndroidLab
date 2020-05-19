@@ -8,7 +8,6 @@ import br.com.bersoncrios.myandroidlab.core.viewmodel.BaseViewModel
 import br.com.bersoncrios.myandroidlab.core.viewmodel.ResourceManager
 import br.com.bersoncrios.myandroidlab.core.viewmodel.ViewState
 import br.com.bersoncrios.myandroidlab.features.starwars.data.People
-import br.com.bersoncrios.myandroidlab.features.starwars.data.Result
 import br.com.bersoncrios.myandroidlab.features.starwars.repository.StarWarsRepository
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
@@ -22,8 +21,8 @@ class StarWarsViewModel(
     private val _viewStateDetail = MutableLiveData<ViewState>()
     private val _viewState = MutableLiveData<ViewState>()
 
-    private val _peopleList: MutableLiveData<List<People>> by lazy {
-        val liveData = MutableLiveData<List<People>>()
+    private val _peopleList: MutableLiveData<People> by lazy {
+        val liveData = MutableLiveData<People>()
 
         _viewState.value = ViewState.Loading(true)
 
@@ -46,7 +45,7 @@ class StarWarsViewModel(
         return@lazy liveData
     }
 
-    val PeopleList: LiveData<List<People>> = _peopleList
+    val peopleList: LiveData<People> = _peopleList
     val peopleDetail: LiveData<People> = _peopleDetail
     val viewStateDetail: LiveData<ViewState> = _viewStateDetail
     val viewState: LiveData<ViewState> = _viewState

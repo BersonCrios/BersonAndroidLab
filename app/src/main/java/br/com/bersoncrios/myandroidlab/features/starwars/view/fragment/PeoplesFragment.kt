@@ -2,15 +2,12 @@ package br.com.bersoncrios.myandroidlab.features.starwars.view.fragment
 
 import android.app.AlertDialog
 import android.os.Bundle
-import android.system.Os.close
 import android.util.Log
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.lifecycle.Observer
 import androidx.recyclerview.widget.GridLayoutManager
-
 import br.com.bersoncrios.myandroidlab.R
 import br.com.bersoncrios.myandroidlab.core.view.BaseFragment
 import br.com.bersoncrios.myandroidlab.core.viewmodel.ViewState
@@ -36,7 +33,7 @@ class PeoplesFragment : BaseFragment<StarWarsViewModel>(true) {
         pessoaAdapter = PessoaAdapter()
 
         rvPessoas.apply {
-            layoutManager = GridLayoutManager(context, 2)
+            layoutManager = GridLayoutManager(context, 1)
             adapter = pessoaAdapter
         }
 
@@ -61,9 +58,9 @@ class PeoplesFragment : BaseFragment<StarWarsViewModel>(true) {
             }
         })
 
-        viewModel.PeopleList.observe(viewLifecycleOwner, Observer { peopleList ->
-            Log.e("AAA", peopleList.get(0).results.toString())
-            pessoaAdapter.updateData(peopleList!!.get(0).results)
+        viewModel.peopleList.observe(viewLifecycleOwner, Observer { peopleList ->
+            Log.e("AAA", peopleList.results.toString())
+            pessoaAdapter.updateData(peopleList!!.results)
         })
     }
 }

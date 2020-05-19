@@ -5,7 +5,7 @@ import br.com.bersoncrios.myandroidlab.features.starwars.data.People
 import br.com.bersoncrios.myandroidlab.features.starwars.network.StarWarsApi
 
 class StarWarsRepository constructor(private val starWarsApi : StarWarsApi){
-    suspend fun getStarWars() : ServiceResult<List<People>> {
+    suspend fun getStarWars() : ServiceResult<People> {
         return try {
             val result = starWarsApi.getPeople().await()
             ServiceResult.Success(result)
