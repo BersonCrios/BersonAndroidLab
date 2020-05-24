@@ -57,3 +57,17 @@ W
 'app/src/main/res/layout/item_people.xml,a\e\aeb2b22b7ea33a535e48369958805ad6271dd12b
 \
 ,app/src/main/res/layout/fragment_peoples.xml,f\6\f684b9671bbb2564fdcf267e48d53642102499fa
+Y
+)app/src/main/res/layout/activity_main.xml,7\6\76b07e40f24cce093536731477540f12e7da3cb6
+D
+widgets/build.gradle,7\7\77af54a16599a673016120f88b8293b319c578b2
+°
+qwidgets/src/main/java/br/com/bersoncrios/widgets/HorizontalCarouselRecyclerView/HorizontalCarouselRecyclerView.kt,8\a\8a59341166a4017499c6bcbbe1e24f7525ddab6c
+U
+%app/src/main/res/layout/list_item.xml,0\e\0e2dbde10fa21a69e5da23f2681513bb29e1a4c4
+Ö
+Uapp/src/main/java/br/com/bersoncrios/myandroidlab/features/horizontalRv/model/Item.kt,8\9\891d41c0f0f7c659e01420303b66a59ce4db2f11
+ì
+capp/src/main/java/br/com/bersoncrios/myandroidlab/features/horizontalRv/view/adapter/ItemAdapter.kt,c\5\c572c9abf8db8b304b954a0711d06c05c204fda7
+ù
+mapp/src/main/java/br/com/bersoncrios/myandroidlab/features/horizontalRv/view/activity/HorizontalRVActivity.kt,7\f\7f07595ef9ef943a08bb3d955e21f557d90b5caf

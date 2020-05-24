@@ -88,6 +88,12 @@ dependencies {
     //Pagination
     implementation "androidx.paging:paging-runtime:$paging_version"
 
+    //Material Theme
+    implementation 'com.google.android.material:material:1.1.0'
+
+    //WIDGETS
+    implementation project(':widgets')
+
     //test
     testImplementation "junit:junit:$junitVersion"
     testImplementation "androidx.arch.core:core-testing:$coreTestingVersion"
